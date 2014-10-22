@@ -16,7 +16,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     
     @IBOutlet weak var adBanner: ADBannerView!
     
-    let config: Config = Config()
+    let config = Config()
     
     override func viewDidLoad() {
         super.viewDidLoad()
