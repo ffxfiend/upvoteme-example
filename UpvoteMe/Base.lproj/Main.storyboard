@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UpvoteMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZW-mI-62K" userLabel="Info Button">
+                                <rect key="frame" x="562" y="528" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="C6g-8F-xKK"/>
+                                    <constraint firstAttribute="height" constant="22" id="hfT-R2-GWW"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5ey-dZ-pUw" kind="presentation" modalPresentationStyle="formSheet" id="Wex-at-M62"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPB-Iz-8nH" userLabel="Up Vote Button">
+                                <rect key="frame" x="195" y="65" width="211" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="Jh9-29-0Ps"/>
+                                    <constraint firstAttribute="height" constant="180" id="xEZ-Nu-T1V"/>
+                                </constraints>
+                                <state key="normal" image="upvote">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-CS-ve5" userLabel="Down Vote Button">
+                                <rect key="frame" x="195" y="356" width="211" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="1Ky-1o-zmS"/>
+                                    <constraint firstAttribute="width" constant="211" id="Cxr-1b-JK4"/>
+                                </constraints>
+                                <state key="normal" image="downvote">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aP-Pq-dbF" userLabel="Score">
+                                <rect key="frame" x="195" y="253" width="211" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="ckb-1g-VYh"/>
+                                    <constraint firstAttribute="width" constant="211" id="dKM-d7-NKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rbs-UW-W1W" userLabel="Ad Banner">
+                                <rect key="frame" x="140" y="558" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="8nQ-GH-f1k"/>
+                                    <constraint firstAttribute="height" constant="50" id="OaK-D1-YBT"/>
+                                </constraints>
+                            </adBannerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBW-ni-Pmd" userLabel="Up Count">
+                                <rect key="frame" x="355" y="182" width="24" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="00d-m6-k5K"/>
+                                    <constraint firstAttribute="height" constant="21" id="X5X-be-f4Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8g-xE-i1u" userLabel="Down Count">
+                                <rect key="frame" x="355" y="402" width="24" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="C22-Cb-awB"/>
+                                    <constraint firstAttribute="height" constant="21" id="yIW-N1-g1Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ol-nm-JHn" userLabel="Refresh Button">
+                                <rect key="frame" x="16" y="503" width="43" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="LkS-b7-pQ6"/>
+                                    <constraint firstAttribute="height" constant="47" id="byD-so-Ov3"/>
+                                </constraints>
+                                <state key="normal" image="refresh_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UpvoteMe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYY-Tb-74z" userLabel="UpvoteMe Label">
+                                <rect key="frame" x="16" y="20" width="117" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="aBd-Ah-Rox"/>
+                                    <constraint firstAttribute="width" constant="117" id="hoc-kk-ErF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="6aP-Pq-dbF" secondAttribute="centerY" id="0xI-Et-ymY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Ol-nm-JHn" secondAttribute="bottom" constant="50" id="1Gw-U4-5An"/>
+                            <constraint firstItem="6aP-Pq-dbF" firstAttribute="top" secondItem="EPB-Iz-8nH" secondAttribute="bottom" constant="8" id="1pp-61-N6h"/>
+                            <constraint firstItem="wZW-mI-62K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4zv-se-5lt"/>
+                            <constraint firstItem="eE1-CS-ve5" firstAttribute="trailing" secondItem="k8g-xE-i1u" secondAttribute="trailing" constant="27" id="52H-nY-dIe"/>
+                            <constraint firstItem="gBW-ni-Pmd" firstAttribute="bottom" secondItem="EPB-Iz-8nH" secondAttribute="bottom" constant="-42" id="Iwr-sh-GRc"/>
+                            <constraint firstAttribute="centerX" secondItem="eE1-CS-ve5" secondAttribute="centerX" id="L1S-sh-8nF"/>
+                            <constraint firstAttribute="centerX" secondItem="6aP-Pq-dbF" secondAttribute="centerX" id="M34-Of-5BN"/>
+                            <constraint firstItem="EYY-Tb-74z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RHD-6z-8NW"/>
+                            <constraint firstItem="9Ol-nm-JHn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dD4-se-jFf"/>
+                            <constraint firstItem="eE1-CS-ve5" firstAttribute="top" secondItem="k8g-xE-i1u" secondAttribute="top" constant="-46" id="hLf-2i-AtI"/>
+                            <constraint firstItem="eE1-CS-ve5" firstAttribute="top" secondItem="6aP-Pq-dbF" secondAttribute="bottom" constant="8" id="jmW-3Q-i94"/>
+                            <constraint firstAttribute="centerX" secondItem="EPB-Iz-8nH" secondAttribute="centerX" id="m9H-X7-j9R"/>
+                            <constraint firstAttribute="centerX" secondItem="Rbs-UW-W1W" secondAttribute="centerX" id="nJm-wc-NBy"/>
+                            <constraint firstItem="gBW-ni-Pmd" firstAttribute="trailing" secondItem="EPB-Iz-8nH" secondAttribute="trailing" constant="-27" id="nzp-Wy-Vw1"/>
+                            <constraint firstItem="EYY-Tb-74z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t5a-Br-A8m"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Rbs-UW-W1W" secondAttribute="bottom" constant="-8" id="yIO-nH-mst"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wZW-mI-62K" secondAttribute="bottom" constant="50" id="yuG-OR-UNh"/>
+                            <constraint firstItem="EPB-Iz-8nH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zPv-Ld-EfH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zPv-Ld-EfH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="adBanner" destination="Rbs-UW-W1W" id="DV6-5d-SuL"/>
+                        <outlet property="downvoteConstraint" destination="jmW-3Q-i94" id="UUd-Ad-gAa"/>
+                        <outlet property="upvoteConstrant" destination="1pp-61-N6h" id="lZT-j1-ioV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="9fc-8E-koH">
+            <objects>
+                <viewController id="5ey-dZ-pUw" customClass="AboutViewController" customModule="UpvoteMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LE2-Hh-BlG"/>
+                        <viewControllerLayoutGuide type="bottom" id="oiK-z7-GCL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DWK-4m-f5F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="UpvoteMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI1-iY-Ill">
+                                <rect key="frame" x="150" y="37" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5Or-LX-8ul"/>
+                                    <constraint firstAttribute="height" constant="31" id="EWr-Da-2ya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-hc-nJR">
+                                <rect key="frame" x="150" y="104" width="300" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="JLO-6N-Aog"/>
+                                    <constraint firstAttribute="width" constant="300" id="VSH-40-b0d"/>
+                                </constraints>
+                                <string key="text">UpvoteMe is an app for upvoting things. All the things. It was initially intended for Redditors, inspired by Reddit's Upvote/Downvote system, but can really be used for anything. Have fun, you silly kids.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYd-wW-Au5">
+                                <rect key="frame" x="222" y="354" width="156" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="hWc-iY-J7c"/>
+                                    <constraint firstAttribute="height" constant="30" id="xOQ-js-McD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Brag on Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AC0-zN-NqW">
+                                <rect key="frame" x="222" y="392" width="156" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LZB-9k-6ev"/>
+                                    <constraint firstAttribute="width" constant="156" id="yHe-Pm-UmE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Brag on Twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJR-aa-2dZ">
+                                <rect key="frame" x="265" y="550" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Pbd-aa-hY5"/>
+                                    <constraint firstAttribute="height" constant="30" id="q4D-zA-nBC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="5ey-dZ-pUw" eventType="touchUpInside" id="KDz-8F-9dh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upvote Me was made with love by Novall Khan. Connect with her on Twitter @novallkhan." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-ck-BtD">
+                                <rect key="frame" x="150" y="254" width="300" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="SzV-39-Nn9"/>
+                                    <constraint firstAttribute="height" constant="77" id="jJn-vY-hrW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QI1-iY-Ill" firstAttribute="top" secondItem="LE2-Hh-BlG" secondAttribute="bottom" constant="37" id="2pj-TA-ORk"/>
+                            <constraint firstAttribute="centerX" secondItem="Fte-hc-nJR" secondAttribute="centerX" id="5Sm-K9-uqb"/>
+                            <constraint firstItem="PYd-wW-Au5" firstAttribute="top" secondItem="sj0-ck-BtD" secondAttribute="bottom" constant="23" id="EB4-Kb-2kp"/>
+                            <constraint firstItem="AC0-zN-NqW" firstAttribute="top" secondItem="PYd-wW-Au5" secondAttribute="bottom" constant="8" id="SRw-ck-OVn"/>
+                            <constraint firstItem="sj0-ck-BtD" firstAttribute="top" secondItem="Fte-hc-nJR" secondAttribute="bottom" constant="8" id="T4S-cJ-yUz"/>
+                            <constraint firstItem="oiK-z7-GCL" firstAttribute="top" secondItem="kJR-aa-2dZ" secondAttribute="bottom" constant="20" id="cqH-Js-cZ1"/>
+                            <constraint firstAttribute="centerX" secondItem="sj0-ck-BtD" secondAttribute="centerX" id="ep7-Df-fRY"/>
+                            <constraint firstAttribute="centerX" secondItem="PYd-wW-Au5" secondAttribute="centerX" id="kAW-1a-UCe"/>
+                            <constraint firstAttribute="centerX" secondItem="QI1-iY-Ill" secondAttribute="centerX" id="pHi-6h-Qhs"/>
+                            <constraint firstAttribute="centerX" secondItem="AC0-zN-NqW" secondAttribute="centerX" id="qQ4-jn-DHz"/>
+                            <constraint firstAttribute="centerX" secondItem="kJR-aa-2dZ" secondAttribute="centerX" id="ryG-Do-QHs"/>
+                            <constraint firstItem="Fte-hc-nJR" firstAttribute="top" secondItem="QI1-iY-Ill" secondAttribute="bottom" constant="36" id="sCg-Ve-bVq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1oR-fS-SMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="326"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="downvote" width="211" height="180"/>
+        <image name="refresh_button" width="43" height="47"/>
+        <image name="upvote" width="211" height="180"/>
+    </resources>
+</document>
